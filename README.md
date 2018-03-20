@@ -1,4 +1,6 @@
-### Unpack 🛍  your JS source maps 🗺  to original files and folders.
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/source-map-unpack)
+
+### CLI to unpack 🛍  your JS source maps 🗺  to original files and folders.
 
 ### Usage:
 ``` unpack <project-folder> <path-to-sourcemap> ```
