@@ -1,4 +1,6 @@
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/source-map-unpack)
+[![npm version](https://badge.fury.io/js/source-map-unpack.svg)](https://badge.fury.io/js/source-map-unpack)
+
+[![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/source-map-unpack.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fsource-map-unpack)
 
 ### CLI to unpack 🛍  your JS source maps 🗺  to original files and folders.
 
