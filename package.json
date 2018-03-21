@@ -1,12 +1,16 @@
 {
   "name": "source-map-unpack",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Unpack 🛍  your JS source maps 🗺  to original files and folders.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Pavlo Kochubei",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavloko/source-map-unpack"
+  },
   "keywords": [
     "source map",
     "source-map",
@@ -20,8 +24,6 @@
   "dependencies": {
     "ascii-progress": "^1.0.5",
     "chalk": "^2.3.2",
-    "figlet": "^1.2.0",
-    "inquirer": "^5.1.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "source-map": "^0.7.2"
@@ -33,7 +35,6 @@
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/inquirer": "^0.0.38",
     "@types/mkdirp": "^0.5.2",
     "@types/source-map": "^0.5.7",
     "@types/minimist": "^1.2.0",
