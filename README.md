@@ -4,7 +4,8 @@
 ### CLI to unpack 🛍  your JS source maps 🗺  to original files and folders.
 
 ### Usage:
-``` unpack <project-folder> <path-to-sourcemap> ```
+1. ``` npm install -g source-map-unpack ```
+2. ``` unpack <project-folder> <path-to-sourcemap> ```
 
 For example:
 
