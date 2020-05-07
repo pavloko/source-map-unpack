@@ -1,6 +1,6 @@
 {
   "name": "source-map-unpack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Unpack 🛍  your JS source maps 🗺  to original files and folders.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
