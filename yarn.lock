@@ -34,25 +34,9 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi.js@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/ansi.js/-/ansi.js-0.0.5.tgz#e3e9e45eb6977ba0eeeeed11677d12144675348c"
-  dependencies:
-    on-new-line "0.0.1"
-
 arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
-
-ascii-progress@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/ascii-progress/-/ascii-progress-1.0.5.tgz#9610aa127ab794af561e893613c36c906f78d9ee"
-  dependencies:
-    ansi.js "0.0.5"
-    end-with "^1.0.2"
-    get-cursor-position "1.0.3"
-    on-new-line "1.0.0"
-    start-with "^1.0.2"
 
 chalk@*, chalk@^2.3.0, chalk@^2.3.2:
   version "2.3.2"
@@ -76,17 +60,9 @@ diff@^3.1.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
-end-with@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/end-with/-/end-with-1.0.2.tgz#a432755ab4f51e7fc74f3a719c6b81df5d668bdc"
-
 escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
-
-get-cursor-position@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/get-cursor-position/-/get-cursor-position-1.0.3.tgz#0e41d60343b705836a528d69a5e099e2c5108d63"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -110,14 +86,6 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-on-new-line@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/on-new-line/-/on-new-line-0.0.1.tgz#99339cb06dcfe3e78d6964a2ef2af374a145f8fb"
-
-on-new-line@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/on-new-line/-/on-new-line-1.0.0.tgz#8585bc2866c8c0e192e410a6d63bdd1722148ae7"
-
 source-map-support@^0.5.3:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.4.tgz#54456efa89caa9270af7cd624cc2f123e51fbae8"
@@ -131,10 +99,6 @@ source-map@*, source-map@^0.7.2:
 source-map@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
-
-start-with@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/start-with/-/start-with-1.0.2.tgz#a069a5f46a95fca7f0874f85a28f653d0095c267"
 
 supports-color@^5.3.0:
   version "5.3.0"

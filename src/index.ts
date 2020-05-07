@@ -4,7 +4,6 @@ import chalk from 'chalk'
 import { dirname, join, isAbsolute } from 'path'
 import * as mkdirp from 'mkdirp'
 import { SourceMapConsumer } from 'source-map'
-import * as ProgressBar from 'ascii-progress'
 import * as minimist from 'minimist'
 
 const argv = minimist(process.argv.slice(2))
@@ -42,18 +41,12 @@ try {
     SourceMapConsumer.with(mapFile, null, (consumer: SourceMapConsumer) => {
         console.log(chalk.green(`Unpacking 🛍  your source maps 🗺`))
         const sources = (consumer as any).sources
-        var bar = new ProgressBar({
-            schema: ' [:filled.green:blank] :current/:total :percent :elapseds :etas',
-            total: sources.length
-        })
-
         sources.forEach((source: string) => {
             const WEBPACK_SUBSTRING_INDEX = 11
             const content = consumer.sourceContentFor(source)
             const filePath = `${process.cwd()}/${projectNameInput}/${source.substring(WEBPACK_SUBSTRING_INDEX)}`
             mkdirp.sync(dirname(filePath))
             fs.writeFileSync(filePath, content)
-            bar.tick()
         })
         console.log(chalk.green('🎉  All done! Enjoy exploring your code 💻'))
     })
