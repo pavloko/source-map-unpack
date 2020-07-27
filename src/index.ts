@@ -39,12 +39,14 @@ if (!fs.existsSync(pathToMap)) {
 try {
     const mapFile = fs.readFileSync(pathToMap, 'utf8')
     SourceMapConsumer.with(mapFile, null, (consumer: SourceMapConsumer) => {
-        console.log(chalk.green(`Unpacking 🛍  your source maps 🗺`))
-        const sources = (consumer as any).sources
-        sources.forEach((source: string) => {
-            const WEBPACK_SUBSTRING_INDEX = 11
-            const content = consumer.sourceContentFor(source)
-            const filePath = `${process.cwd()}/${projectNameInput}/${source.substring(WEBPACK_SUBSTRING_INDEX)}`
+     var sanitizeRE = /^\.\.\//;
+        console.log(chalk_1.default.green("Unpacking \uD83D\uDECD  your source\u00A0maps \uD83D\uDDFA"));
+        var sources = consumer.sources;
+        sources.forEach(function (source) {
+            console.log(chalk_1.default.green(source));
+            console.log(chalk_1.default.green(source.replace( sanitizeRE, '')));
+            var content = consumer.sourceContentFor(source);
+            var filePath = process.cwd() + "/" + projectNameInput + "/" + source.replace(sanitizeRE, '');
             mkdirp.sync(dirname(filePath))
             fs.writeFileSync(filePath, content)
         })
