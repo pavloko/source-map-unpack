@@ -18,6 +18,5 @@
             "esnext.asynciterable",
             "dom"
         ]
-    },
-    "baseUrl": "./"
+    }
 }
