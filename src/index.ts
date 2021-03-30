@@ -43,7 +43,7 @@ try {
         const sources = (consumer as any).sources
         sources.forEach((source: string) => {
             const WEBPACK_SUBSTRING_INDEX = 11
-            const content = consumer.sourceContentFor(source)
+            const content = consumer.sourceContentFor(source) as string
             const filePath = `${process.cwd()}/${projectNameInput}/${source.substring(WEBPACK_SUBSTRING_INDEX)}`
             mkdirp.sync(dirname(filePath))
             fs.writeFileSync(filePath, content)
