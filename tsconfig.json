@@ -11,9 +11,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "allowSyntheticDefaultImports": true,
         "lib": [
-            "es2017",
-            "esnext.asynciterable",
-            "dom"
+            "es2020"
         ],
         "strict": true
     }
