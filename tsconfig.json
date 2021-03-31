@@ -17,6 +17,7 @@
             "es2017",
             "esnext.asynciterable",
             "dom"
-        ]
+        ],
+        "strict": true
     }
 }
