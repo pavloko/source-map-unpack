@@ -28,7 +28,7 @@
     "source-map": "^0.7.2"
   },
   "scripts": {
-    "prepublish": "yarn build",
+    "prepublishOnly": "yarn build",
     "build": "tsc",
     "start": "ts-node src/index.ts"
   },
