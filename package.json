@@ -29,7 +29,7 @@
   },
   "scripts": {
     "prepublish": "yarn build",
-    "build": "tsc",
+    "build": "tsc --build",
     "start": "ts-node src/index.ts"
   },
   "devDependencies": {
