@@ -30,6 +30,7 @@
   "scripts": {
     "prepublish": "yarn build",
     "build": "tsc --build",
+    "clean": "tsc --build --clean",
     "start": "ts-node src/index.ts"
   },
   "devDependencies": {
