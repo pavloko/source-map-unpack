@@ -22,9 +22,16 @@ if (!projectNameInput || !mapInput) {
 const pathToProject = join(process.cwd(), projectNameInput)
 const pathToMap = isAbsolute(mapInput) ? mapInput : join(process.cwd(), mapInput)
 
-if (fs.existsSync(pathToProject)) {
+if (!fs.existsSync(pathToProject)) {
     console.log()
-    console.log(chalk.red(`Project folder already exists at: ${pathToProject}`))
+    // Create project dir if it doesn't exist
+    try {
+        fs.mkdirSync(projectNameInput,'0777', true)
+    } catch (err) {
+        console.log(chalk.red(`Couldn't create project at: ${pathToProject}, please, check your permissions`))
+    }
+    
+    console.log(chalk.red(`Project created at: ${pathToProject}`))
     console.log()
     process.exit()
 }
