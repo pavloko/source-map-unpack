@@ -1,16 +1,16 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "target": "es5",
-        "outDir": "./dist",
-        "sourceMap": true,
-        "declaration": true,
-        "skipLibCheck": true,
-        "noImplicitReturns": true,
-        "allowSyntheticDefaultImports": true,
-        "lib": [
-            "es2020"
-        ],
-        "strict": true
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2020"
+    ],
+    "strict": true
+  }
 }
