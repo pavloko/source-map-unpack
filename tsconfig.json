@@ -6,17 +6,11 @@
         "sourceMap": true,
         "declaration": true,
         "skipLibCheck": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
         "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "suppressImplicitAnyIndexErrors": true,
         "allowSyntheticDefaultImports": true,
         "lib": [
-            "es2017",
-            "esnext.asynciterable",
-            "dom"
-        ]
+            "es2020"
+        ],
+        "strict": true
     }
 }
