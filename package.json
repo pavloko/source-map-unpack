@@ -32,7 +32,8 @@
   },
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "tsc",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
     "start": "ts-node src/index.ts",
     "format": "prettier --write src/**/*.ts"
   },
