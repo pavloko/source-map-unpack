@@ -1,22 +1,16 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "target": "es5",
-        "outDir": "./dist",
-        "sourceMap": true,
-        "declaration": true,
-        "skipLibCheck": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "suppressImplicitAnyIndexErrors": true,
-        "allowSyntheticDefaultImports": true,
-        "lib": [
-            "es2017",
-            "esnext.asynciterable",
-            "dom"
-        ]
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2020"
+    ],
+    "strict": true
+  }
 }
