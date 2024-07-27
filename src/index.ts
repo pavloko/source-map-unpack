@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import * as fs from 'fs';
-import mkdirp from 'mkdirp';
+import * as mkdirp from 'mkdirp';
 import * as chalk from 'chalk';
 import * as minimist from 'minimist';
 import { SourceMapConsumer } from 'source-map';
