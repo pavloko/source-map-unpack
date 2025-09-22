@@ -51,11 +51,11 @@ try {
     console.log(chalk.green(`Unpacking 🛍  your source maps 🗺`));
     const sources = (consumer as any).sources;
     sources.forEach((source: string) => {
-      const WEBPACK_SUBSTRING_INDEX = 11;
       const content = consumer.sourceContentFor(source) as string;
-      const filePath = `${process.cwd()}/${projectNameInput}/${source.substring(
-        WEBPACK_SUBSTRING_INDEX,
-      )}`;
+      const filePath = `${pathToProject}/${source}`;
+      if (/^\.\.(?:\/|\\|$)/i.test(join(source))) {
+        throw new Error('Attempted to write outside of project directory');
+      }
       mkdirp.sync(dirname(filePath));
       fs.writeFileSync(filePath, content);
     });
